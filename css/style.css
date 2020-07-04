@@ -1,6 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#simple_arc {
+    display: block;
+    width:306px;
+    height:305px;
+}
 
-
+hr { 
+    width: 95%; 
+    height: 1px; 
+    margin: 0 auto;
+    color: blue;
+    background: white;
+}
 
 footer {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+ul {
+
+    list-style-type: none;
 
 }
