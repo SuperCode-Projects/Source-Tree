@@ -28,6 +28,15 @@ header {
     color: white;
 }
 
+#textblock1 h2 {
+    color: blue;
+
+}
+
+.karussell {
+    color: blue;
+}
+
 #projects  {
     width: 1200px;
     display: grid;
