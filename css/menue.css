@@ -1,0 +1,52 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-style: italic;
+}
+
+.menuepanel {
+    float: right;
+    width: 1920px;
+    height: 1080px;
+    background: blue;
+}
+
+#title {
+    color: white;
+    float: right;
+    margin-top: 88px;
+    margin-right: 22px;
+}
+
+img {
+    float: right;
+    margin-top: 77px;
+    margin-right: 122px;
+}
+
+p {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+h2 {
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 5em;
+    color: blue;
+    text-shadow:    1px  1px 1px white,
+                    1px -1px 1px white,
+                    -1px  1px 1px white,
+                    -1px -1px 1px white;
+}
+
+div {
+    margin-left: 60px;
+    margin-top: 90px;
+    transform: rotate(-22deg);
+}
+
+#menue {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
