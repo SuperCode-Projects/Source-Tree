@@ -16,9 +16,8 @@
 header {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr  .5fr;
+    grid-template-columns: 1fr  1fr;
     gap: 20px;
-    margin-bottom: 100px;
 }
 
   input[type=text], select, textarea {
