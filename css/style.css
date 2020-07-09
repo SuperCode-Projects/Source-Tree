@@ -16,6 +16,10 @@ header {
     grid-template-columns: 1fr 3fr 1fr;
     gap: 20px;
 }
+
+#logo {
+    width: 10%;
+}
 #circletext {
     font-size: 30px;
     width: 150px;
