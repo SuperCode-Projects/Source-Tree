@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+
+/* formular */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+  }
+
+#logo {
+    width: 60%;
+}
+
+header {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 20px;
+}
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: blue;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+label {
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+#gradient {
+    width: 1200px;
+    height: 200px;
+    display: block;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to top, blue 0%, white 50%);
+    margin-bottom: 0;
+}
+
+hr { 
+    margin: 0;
+    width: 95%; 
+    height: 1px; 
+    margin: 0 auto;
+    color: blue;
+    background: white;
+}
+
+footer {
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background: blue;
+    color: white;
+    width: 1200px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+}
+
+ul {
+/*     text-transform: uppercase;
+ */ list-style-type: none;
+    font-size: 10px;
+    padding: 0;
+}
