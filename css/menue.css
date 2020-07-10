@@ -19,18 +19,19 @@
     margin-right: 22px;
 }
 
-img {
+#sign {
     float: right;
     margin-top: 77px;
     margin-right: 122px;
 }
 
-p {
+#menue p {
     display: inline-block;
     font-size: 1.7em;
     font-weight: bold;
 }
-h2 {
+
+#menue h2 {
     margin-left: 20px;
     display: inline-block;
     font-size: 5em;
