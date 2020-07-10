@@ -6,22 +6,34 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+
 header {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     gap: 20px;
 }
+
+#logo {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+#content {
+    align-items: center;  
+}
+
 .main1 {
+    width: 70%;
 
 }
 
 .main2 {
-    
 }
 
 main h2 {
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-style: italic;
     font-size: 2em;
 }
@@ -35,6 +47,7 @@ main h2 {
     font-style: italic;
     background: blue;
     color: white;
+    padding-bottom: 50px;
 }
 
 #projectstitle{
