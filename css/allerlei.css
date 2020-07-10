@@ -65,12 +65,14 @@ main h2 {
     padding-bottom: 20px;
     font-style: normal;
     font-weight: 400;
+
 }
 
 #projects h2 {
     font-size: 3em;
     color: white;
     font-weight: 600;
+
 }
 
 #gradient {
@@ -109,3 +111,4 @@ ul {
     font-size: 10px;
     padding: 0;
 }
+
