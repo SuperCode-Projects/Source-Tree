@@ -75,7 +75,7 @@ main h2 {
 
 #gradient {
     width: 100%;
-    height: 200px;
+    height: 400px;
     display: block;
     justify-content: space-evenly;
     background-image: linear-gradient(to top, blue 0%, white 50%);
