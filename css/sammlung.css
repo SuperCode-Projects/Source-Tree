@@ -55,3 +55,14 @@ footer {
         margin: 0;
     }
 }
+
+
+/* spezielle Teile Bearbeiten */
+
+ header {
+     grid-area: header;
+
+     display: flex;
+     justify-content: space-between;
+     aign-items: center;
+ }
