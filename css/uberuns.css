@@ -11,6 +11,11 @@
     width: 30%;
 }
 
+#logo {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
 header {
     width: 100%;
     display: grid;

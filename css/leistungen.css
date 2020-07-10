@@ -11,12 +11,18 @@
     width: 30%;
 }
 
+#logo {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
 header {
     width: 1200px;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     gap: 20px;
 }
+
 #circletext {
     font-size: 30px;
     width: 150px;
