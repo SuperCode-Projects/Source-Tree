@@ -1,0 +1,57 @@
+/* index >> style  */
+
+
+/* grid >>> korrigieren und anpassen auch HTML !!! */
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header nav"
+    "main main"
+    "footer footer footer footer";
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-gap: 20px;
+
+    height: 100vh
+}
+
+/* grid items >>> korrigieren und anpassen auch HTML !!! */
+header {
+    grid-are: header;
+}
+
+aside {
+    grid-area: nav;
+}
+
+main {
+    grid-area: content;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* responsive machen >>> korrigieren und anpassen auch HTML !!! */
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-areas:
+        "header"
+        "nav"
+        "content"
+        "footer";
+
+        grid-template-columns: 1fr;
+        grid-template-rows:
+        auto /* header */
+        minmax (75px, auto) /* nav */
+        1fr /* main */
+        minmax (75px, auto) /* ?? */
+        auto; /* footer */
+    }
+    nav, aside {
+        margin: 0;
+    }
+}
