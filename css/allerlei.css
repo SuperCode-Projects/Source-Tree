@@ -52,14 +52,14 @@ main h2 {
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     font-style: italic;
-    background: blue;
+    background: #2117a6;
     color: white;
     padding-bottom: 50px;
 }
 
 #projectstitle{
     color: white;
-    background: blue;
+    background: #2117a6;
     font-size: 14px;
     letter-spacing: 2px;
     padding-bottom: 20px;
@@ -80,7 +80,7 @@ main h2 {
     height: 400px;
     display: block;
     justify-content: space-evenly;
-    background-image: linear-gradient(to top, blue 0%, white 50%);
+    background-image: linear-gradient(to top, #2117a6 0%, white 50%);
     margin-bottom: 0;
 }
 
@@ -89,7 +89,7 @@ hr {
     width: 95%; 
     height: 1px; 
     margin: 0 auto;
-    color: blue;
+    color: #2117a6;
     background: white;
 }
 
@@ -97,7 +97,7 @@ footer {
     margin-top: 0;
     padding-top: 40px;
     padding-bottom: 80px;
-    background: blue;
+    background: #2117a6;
     color: white;
     width: 100%;
     display: flex;

@@ -8,7 +8,7 @@
     float: right;
     width: 1920px;
     height: 1080px;
-    background: blue;
+    background: #2117a6;
 }
 
 #title {
@@ -35,7 +35,7 @@
     margin-left: 20px;
     display: inline-block;
     font-size: 5em;
-    color: blue;
+    color: #2117a6;
     text-shadow:    2px  2px 1px white,
                     2px -2px 1px white,
                     -2px  2px 1px white,
