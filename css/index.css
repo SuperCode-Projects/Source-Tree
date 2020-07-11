@@ -45,13 +45,30 @@ section {
     gap: 80px;
     font-style: italic;
     color: #2117a6;
+    width: 70vw;
+    margin-left: auto;
 }
 
-
 #projectstitle { 
-    color: #2117a6;
+    color: black;
     font-size: 12px;
     padding-bottom: 20px;
+    width: 70vw;
+    margin-left: auto;
+    font-weight: 600;
+}
+
+#projects h2 {
+    font-size: 3em;
+    color: #2117a6;
+    font-weight: 600;
+    letter-spacing: 2px;;
+}
+#projects p {
+    font-size: .7em;
+    color: black;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 #gradient {
@@ -65,11 +82,11 @@ section {
 
 #blog {
     grid-area: blog;
-    display: flex;
+    display: block;
     justify-content: space-around;
     align-items: center;
     width: 90vw;
-    left: 4vw;
+    left: 20vw;
 }
 #gradient {
     width: 100%;
@@ -83,6 +100,8 @@ section {
     margin-top: 0;
     background: #2117a6;
     color: white;
+    margin-bottom: 0;
+
 }
 
 #blog h3 {
@@ -109,11 +128,21 @@ section {
     padding-bottom: 30px;
     font-style: italic;
     padding-top: 5px;
+    margin-bottom: 0;
 }
 
 footer {
     grid-area: footer;
     background: blue;
+    margin-top: 0;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    background: #2117a6;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
 }
 
 .container {
@@ -135,20 +164,8 @@ hr {
     margin: 0;
     width: 90%; 
     height: 1px; 
-    margin: 0 auto;
+    margin: 0;
     background: white;
-}
-
-footer {
-    margin-top: 0;
-    padding-top: 40px;
-    padding-bottom: 80px;
-    background: #2117a6;
-    color: white;
-    width: 100%;
-    display: flex;
-    align-items: baseline;
-    justify-content: space-evenly;
 }
 
 ul {
@@ -157,4 +174,24 @@ ul {
     font-size: 10px;
     padding: 0;
 }
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-areas:
+        "header"
+        "section"
+        "main"
+        "blog"
+        "footer";
+
+        grid-template-columns: 1fr;
+        grid-template-rows:
+        auto /* header */
+        minmax (75px, auto) /* nav */
+        1fr /* main */
+        minmax (75px, auto) /* ?? */
+        auto; /* footer */
+    }
+}
+
 
