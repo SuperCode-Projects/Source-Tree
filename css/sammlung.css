@@ -18,11 +18,8 @@
 
 /* grid items >>> korrigieren und anpassen auch HTML !!! */
 header {
-    grid-are: header;
-}
-
-aside {
-    grid-area: nav;
+    grid-area: img;
+    grid-area: 
 }
 
 main {
