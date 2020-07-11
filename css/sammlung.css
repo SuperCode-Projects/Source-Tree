@@ -1,14 +1,11 @@
-/* index >> style  */
-
-
 /* grid >>> korrigieren und anpassen auch HTML !!! */
 .container {
     display: grid;
     grid-template-areas: 
     "header header header"
     "main main main"
-    "main main main"
-    "main main main"
+    "main main"
+    "main"
     "footer footer footer footer";
 
     grid-template-columns: 1fr 1fr 1fr;
@@ -28,6 +25,10 @@ main {
     grid-area: h1;
     grid-area: img;
     grid-area: img;
+    grid-area: div;
+    grid-area: div;
+    grid-area: article;
+
 }
 
 footer {
@@ -64,10 +65,10 @@ footer {
 
 /* spezielle Teile Bearbeiten */
 
- header {
+header {
      grid-area: header;
      display: flex;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
  }
 
@@ -76,5 +77,5 @@ footer {
  }
 
  footer {
-     
+
  }

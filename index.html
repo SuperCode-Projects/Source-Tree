@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VLow Studio Start</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>    
     <div class="container">
         <header>
             <!--     Hier Logo  -- css gestyled oder pix? -- in divContainer einfügen -->
-            <!--     MainMenue >> DeskTop/Tablett:TableauMenü Mobile:rein/raus -->
             <img id="logo" src="./img/vlow_logo.png">
             <img class="pics" src="./img/corporate2019.png">
-            <nav id="aside">
+            <!--     MainMenue >> DeskTop/Tablett:TableauMenü Mobile:rein/raus -->
+
+            <nav class="nav">
                 MENÜ
                 <img id="hamburger" src="../img/hamburger.png">
                 <a href="./pages/menue.html">Menü</a>
@@ -28,14 +29,16 @@
         <!--     Auswahlbereich >> Hauptbereiche  || KampagnenFilme || Website Redesign   -->
         <main>
             <section>
-                <h1 class="maintext">Lorem ipsum dolor sit amet, consectetuer adispiscing elit.</h1>
-                <img class="mainpic1" src="img/kampagnenfilm2019.png">
+                <div>
+                    <h1 class="maintext">Lorem ipsum dolor sit amet, consectetuer adispiscing elit.</h1>
+                    <img class="mainpic1" src="img/kampagnenfilm2019.png">
+                </div>
                 <img class="mainpic1" src="img/webredesign2019letsPlay.png">
             </section>
         <!--     letzen 8 Projecte  -->
         <p id="projectstitle">WEITERE PROJEKTE</p>
-            <article id="projects">
-                <div>
+            <article >
+                <div id="projects1">
                     <h2>Langbrett Schuhe</h2>
                     <p>Webfilm 2016</p>
                     <h2>Melting Shop</h2>
@@ -45,7 +48,7 @@
                     <h2>Toralarm</h2>
                     <p>Webfilm 2016</p>
                 </div>
-                <div>
+                <div id="projects2">
                     <h2>Merck Visuals</h2>
                     <p>Webfilm 2016</p>
                     <h2>Allerlei</h2>
@@ -58,8 +61,8 @@
             </article>
         </main>
         <!--     blogeinträge  -->
-        <div id="gradient"></div>
         <article id="blog">
+            <div id="gradient"></div>
             <h3>BLOG</h3>
             <div>
                 <a href="./pages/blog.html"><h1>Die heilige Mittagspause</h1>
@@ -73,28 +76,28 @@
                 <a href="./pages/blog.html"><h1>St Loves CXI</h1>
                 <p>16.09.2019</p></a>
             </div>
+            <hr>
         </article>
         <!--     FooterMenue Adressdaten SocialMedia -->
-        <hr>
-        <footer>
-            <ul>
+        <footer class="footer">
+            <ul class="footer1">
                 <li>IMPRESSUM</li>
                 <li>KONTAKT</li>
                 <li>JOBS</li>
             </ul>
-            <ul>
+            <ul class="footer2">
                 <li>VLOW STUDIO | SOURCETREE GMBH</li>
                 <br>
                 <li>Düsselstrasse 20</li>
                 <li>40219 Düsseldorf</li>
             </ul>
-            <ul>
+            <ul class="footer3">
                 <li>LUST AUF EIN NEUES PROJEKT?</li>
                 <br>
                 <li>+49(0)211 261 342 97</li>
                 <li>tach@source-tree.com</li>
             </ul>
-            <ul>
+            <ul class="footer4">
                 <li>FOLGT UNS AUF</li>
                 <br>
                 <li>Facebook</li>
