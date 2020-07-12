@@ -8,15 +8,15 @@
 
 header {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    
+
     margin-bottom: 70px;
 }
 
 #logo {
-    margin-left: 40px;
-    margin-top: 40px;
+   position: relative;
+   left: 4vw;
+   top: 1vh;
 }
 
 
@@ -26,7 +26,7 @@ header {
     width: 10vw;
     position: relative;
     top: -16vh;
-   right: -7vw;
+   left: 85vw;
    cursor: pointer;
 }
 
@@ -196,4 +196,9 @@ ul {
  */ list-style-type: none;
     font-size: 10px;
     padding: 0;
+}
+main h2{
+    position: relative;
+    top: -7vh;
+    left: 17vw;
 }

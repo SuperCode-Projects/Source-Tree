@@ -16,9 +16,7 @@
 
 header {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    gap: 20px;
+    
 }
 
 #menu{
@@ -27,7 +25,7 @@ header {
     width: 10vw;
     position: relative;
     top: -16vh;
-   right: -7vw;
+   left: 88vw;
    cursor: pointer;
 }
 
