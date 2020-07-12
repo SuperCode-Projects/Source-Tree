@@ -1,91 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
 }
 
-.pics {
-    width: 30%;
-}
-
-#logo {
-    margin-left: 40px;
-    margin-top: 40px;
-}
-
 header {
-    width: 1200px;
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    gap: 20px;
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-#circletext {
-    font-size: 30px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #2117a6;
-    color: white;
-    text-shadow:    1px  1px 1px #2117a6,
-                    1px -1px 1px #2117a6,
-                    -1px  1px 1px #2117a6,
-                    -1px -1px 1px #2117a6;
-    color: white;
-}
+.nav {
 
-#textblock1 h2 {
-    color: #2117a6;
-
-}
-
-.karussell {
-    color: #2117a6;
-}
-
-#projects  {
-    width: 1200px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    font-style: italic;
-}
-
-#projectstitle{
-    color: black;
-    font-size: 12px;
-    padding-bottom: 20px;
-}
-
-#projects h2 {
-    font-size: 2em;
-    color: #2117a6;
-}
-
-#gradient {
-    width: 1200px;
-    height: 400px;
-    display: block;
-    justify-content: space-evenly;
-    background-image: linear-gradient(to top, #2117a6 0%, white 50%);
-    margin-bottom: 0;
 }
 
 #blog {
-    width: 1200px;
+    grid-area: blog;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
     margin-top: 0;
     background: #2117a6;
     color: white;
-    padding-bottom: 50px;
+    margin-bottom: 0;
 }
+#gradient {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to top, #2117a6 0%, white 70%);
+    margin-bottom: 0;
+}
+
 
 #blog h3 {
     font-size: 10px;
     color: white;
     padding-bottom: 30px;
+    margin-left: 20vw;
 }
 
 #blog h1 {
@@ -96,8 +51,9 @@ header {
                     -1px  1px 1px white,
                     -1px -1px 1px white;
     color: #2117a6;
-    font-size: 3em;
+    font-size: 4em;
     padding-top: 20px;
+    margin-left: 20vw;
 }
 
 #blog p {
@@ -106,34 +62,70 @@ header {
     padding-bottom: 30px;
     font-style: italic;
     padding-top: 5px;
-
-}
-
-
-hr { 
-    margin: 0;
-    width: 95%; 
-    height: 1px; 
-    margin: 0 auto;
-    color: #2117a6;
-    background: white;
+    margin-bottom: 0;
+    margin-left: 20vw;
 }
 
 footer {
+    grid-area: footer;
+    background: blue;
     margin-top: 0;
     padding-top: 40px;
     padding-bottom: 80px;
+    padding: 40px 80px 80px 80px;
     background: #2117a6;
     color: white;
-    width: 1200px;
+    width: 100%;
     display: flex;
     align-items: baseline;
-    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    height: 100vh;
+
+    grid-template-areas:
+    'header header header header'
+    'section section section section'
+    'main main main main'
+    'blog blog blog blog'
+    'footer footer footer footer ';
+  }
+  
+hr { 
+    margin: 0;
+    width: 90%; 
+    height: 1px; 
+    margin: 0;
+    background: white;
 }
 
 ul {
 /*     text-transform: uppercase;
  */ list-style-type: none;
-    font-size: 10px;
+    font-size: 14px;
     padding: 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        grid-template-areas:
+        "header"
+        "section"
+        "main"
+        "blog"
+        "footer";
+
+        grid-template-columns: 1fr;
+        grid-template-rows:
+        1fr /* header */
+        minmax (75px, auto) /* nav */
+        1fr /* main */
+        minmax (75px, auto) /* ?? */
+        auto; /* footer */
+    }
 }

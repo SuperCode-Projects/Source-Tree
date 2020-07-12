@@ -71,36 +71,25 @@ section {
     letter-spacing: 1px;
 }
 
-#gradient {
-    width: 100%;
-    height: 400px;
-    display: block;
-    justify-content: space-evenly;
-    background-image: linear-gradient(to top, #2117a6 0%, white 50%);
-    margin-bottom: 0;
-}
-
 #blog {
     grid-area: blog;
     display: block;
     justify-content: space-around;
     align-items: center;
-    width: 90vw;
-    left: 20vw;
-}
-#gradient {
-    width: 100%;
-    height: 400px;
-    background-image: linear-gradient(to top, #2117a6 0%, white 50%);
-    margin-bottom: 0;
-}
-
-#blog {
     width: 100%;
     margin-top: 0;
     background: #2117a6;
     color: white;
     margin-bottom: 0;
+}
+#gradient {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(to top, #2117a6 0%, white 70%);
+    margin-bottom: 0;
+}
+
+#blog {
 
 }
 
@@ -108,6 +97,7 @@ section {
     font-size: 10px;
     color: white;
     padding-bottom: 30px;
+    margin-left: 20vw;
 }
 
 #blog h1 {
@@ -118,8 +108,9 @@ section {
                     -1px  1px 1px white,
                     -1px -1px 1px white;
     color: #2117a6;
-    font-size: 3em;
+    font-size: 4em;
     padding-top: 20px;
+    margin-left: 20vw;
 }
 
 #blog p {
@@ -129,6 +120,7 @@ section {
     font-style: italic;
     padding-top: 5px;
     margin-bottom: 0;
+    margin-left: 20vw;
 }
 
 footer {
@@ -137,12 +129,13 @@ footer {
     margin-top: 0;
     padding-top: 40px;
     padding-bottom: 80px;
+    padding: 40px 80px 80px 80px;
     background: #2117a6;
     color: white;
     width: 100%;
     display: flex;
     align-items: baseline;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .container {
@@ -171,7 +164,7 @@ hr {
 ul {
 /*     text-transform: uppercase;
  */ list-style-type: none;
-    font-size: 10px;
+    font-size: 14px;
     padding: 0;
 }
 
@@ -186,7 +179,7 @@ ul {
 
         grid-template-columns: 1fr;
         grid-template-rows:
-        auto /* header */
+        1fr /* header */
         minmax (75px, auto) /* nav */
         1fr /* main */
         minmax (75px, auto) /* ?? */

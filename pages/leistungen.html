@@ -4,31 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VLow Studio Leistungen</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/leistungen.css">
 </head>
 <body>    
+    <div class="container"></div>
     <header>
+        <!--     Hier Logo  -- css gestyled oder pix? -- in divContainer einfügen -->
         <img id="logo" src="../img/vlow_logo.png">
-    <!--     MainMenue >> DeskTop/Tablett:TableauMenü Mobile:rein/raus -->
-        <aside id="aside">
+        <h2>
+            Lorem ipsum dolor sit amed, consectetuer adipiscing elit.
+        </h2>
+        <!--     MainMenue >> DeskTop/Tablett:TableauMenü Mobile:rein/raus -->
+        <nav class="nav">
             MENÜ
             <img id="hamburger" src="../img/hamburger.png">
-            <a href="./menue.html">Menü</a>
-            <a href="../index.html">Startseite</a>
-            <a href="./leistungen.html">Leistungen</a>
-            <a href="./uberuns.html">Über uns</a>
-            <a href="./blog.html">Blog</a>
-            <a href="./impressum.html">Impressum</a>
-            <a href="./kontakt.html">Kontakt</a>
-            <a href="./allerlei.html">Allerlei</a>
-        </aside>
+            <a href="./pages/menue.html">Menü</a>
+            <a href="./pages/leistungen.html">Leistungen</a>
+            <a href="./pages/uberuns.html">Über uns</a>
+            <a href="./pages/blog.html">Blog</a>
+            <a href="./pages/impressum.html">Impressum</a>
+            <a href="./pages/kontakt.html">Kontakt</a>
+            <a href="./pages/allerlei.html">Allerlei</a>
+        </nav>
+    </header>
     <!--     Textblöcke   -->
-        <div id="textblock1">
-            <p>AENEAN MASSA</p>
-            <h2>
-                Lorem ipsum dolor sit amed, consectetuer adipiscing elit.
-            </h2>
-        </div>
+    <div id="textblock1">
+        <p>AENEAN MASSA</p>
+        <h2>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui.
+        </h2>
+    </div>
     <!--     Designbereiche 01   -->
     <section>
         <div>
@@ -55,20 +60,18 @@
         </div>
     </section>
     </header>
-    <!--     Auswahlbereich >> Hauptbereiche  || KampagnenFilme || Website Redesign   -->
-    <main
-    <!--     letzen 8 Projecte  -->
-        <article id="karussell">
-            <div>
-                <p class="karussell">KUNDEN</p>
-                <h2 class="karussell">Albrecht Jung | ALDI Süd | BrawandRieken | CAT Footwear | Champion </h2>
-                <h2 class="karussell">XYZer.Link | Hotel Shanghai | Kaffeerösterei Hubert Tempelmann </h2>
-            </div>
-        </article>
+    <!-- Karussel mit Brands -->
+    <main id="karussell">
+        <div>
+            <p class="karussell">KUNDEN</p>
+            <h2 class="karussell">Albrecht Jung | ALDI Süd | BrawandRieken | CAT Footwear | Champion </h2>
+            <h2 class="karussell">XYZer.Link | Hotel Shanghai | Kaffeerösterei Hubert Tempelmann </h2>
+        </div>
     </main>
+    <hr>
     <!--     blogeinträge  -->
-    <div id="gradient"></div>
     <article id="blog">
+        <div id="gradient"></div>
         <h3>BLOG</h3>
         <div>
             <a href="./pages/blog.html"><h1>Die heilige Mittagspause</h1>
@@ -83,27 +86,27 @@
             <p>16.09.2019</p></a>
         </div>
     </article>
+
     <!--     FooterMenue Adressdaten SocialMedia -->
-    <hr>
-    <footer>
-        <ul>
+    <footer class="footer">
+        <ul class="footer1">
             <li>IMPRESSUM</li>
             <li>KONTAKT</li>
             <li>JOBS</li>
         </ul>
-        <ul>
+        <ul class="footer2">
             <li>VLOW STUDIO | SOURCETREE GMBH</li>
             <br>
             <li>Düsselstrasse 20</li>
             <li>40219 Düsseldorf</li>
         </ul>
-        <ul>
+        <ul class="footer3">
             <li>LUST AUF EIN NEUES PROJEKT?</li>
             <br>
             <li>+49(0)211 261 342 97</li>
             <li>tach@source-tree.com</li>
         </ul>
-        <ul>
+        <ul class="footer4">
             <li>FOLGT UNS AUF</li>
             <br>
             <li>Facebook</li>
@@ -112,6 +115,7 @@
             <li>Vimeo</li>
         </ul>
     </footer>
+</div>
     <script src="./js/script.js"></script>
 </body>
 </html>
