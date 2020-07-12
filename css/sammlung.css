@@ -79,3 +79,16 @@ header {
  footer {
 
  }
+
+
+ <nav class="nav">
+ MENÜ
+ <img id="hamburger" src="../img/hamburger.png">
+ <a href="./pages/menue.html">Menü</a>
+ <a href="./pages/leistungen.html">Leistungen</a>
+ <a href="./pages/uberuns.html">Über uns</a>
+ <a href="./pages/blog.html">Blog</a>
+ <a href="./pages/impressum.html">Impressum</a>
+ <a href="./pages/kontakt.html">Kontakt</a>
+ <a href="./pages/allerlei.html">Allerlei</a>
+</nav>

@@ -13,13 +13,82 @@ header {
     align-items: center;
 }
 
-.nav {
+#menu{
+    display: flex;
+    justify-content: space-around;
+    width: 10vw;
+    position: relative;
+    top: -16vh;
+   right: -7vw;
+   cursor: pointer;
+}
+
+.menuepanel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 1920px;
+    height: 1080px;
+    background: #2117a6;
+    display: none;
+   
+}
+
+#title {
+    font-size: 1em;
+    color: white;
+    float: right;
+    margin-top: 86px;
+    margin-right: 22px;
+}
+
+#sign {
+    float: right;
+    margin-top: 77px;
+    margin-right: 122px;
+    cursor: pointer;
+}
+
+#menue p {
+    display: inline-block;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: white;
+}
+
+#menue h2 {
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 5em;
+    margin-bottom: 110px;
+    color: #2117a6;
+    text-shadow:    2px  2px 1px white,
+                    2px -2px 1px white,
+                    -2px  2px 1px white,
+                    -2px -2px 1px white;
+}
+
+
+.block1, .block2 {
+    font-style: italic;
+    margin-left: 60px;
+    margin-top: 90px;
+    transform: rotate(-25deg);
+}
+
+#menue {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 300px;
+    margin-top: 150px;
 
 }
 
+
+
 section {
     position: relative;
-    grid-area: section;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -141,24 +210,25 @@ footer {
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    
     height: 100vh;
 
     grid-template-areas:
     'header header header header'
-    'section section section section'
     'main main main main'
     'blog blog blog blog'
     'footer footer footer footer ';
   }
-  
+  main {
+      grid-area: main;
+    }
+
 hr { 
+    width: 99%; 
+    height: 22px; 
     margin: 0;
-    width: 90%; 
-    height: 1px; 
-    margin: 0;
-    background: white;
+    background-color: white;
 }
 
 ul {
