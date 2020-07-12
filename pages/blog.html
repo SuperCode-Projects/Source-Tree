@@ -3,25 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VLow Studio Leistungen</title>
+    <title>VLow Studio Blog</title>
     <link rel="stylesheet" href="../css/blog.css">
 </head>
 <body>    
     <header>
         <img id="logo" src="../img/vlow_logo.png">
-    <!--     MainMenue >> DeskTop/Tablett:TableauMenü Mobile:rein/raus -->
-        <aside id="aside">
-            MENÜ
-            <img id="hamburger" src="../img/hamburger.png">
-            <a href="./menue.html">Menü</a>
-            <a href="../index.html">Startseite</a>
-            <a href="./leistungen.html">Leistungen</a>
-            <a href="./uberuns.html">Über uns</a>
-            <a href="./blog.html">Blog</a>
-            <a href="./impressum.html">Impressum</a>
-            <a href="./kontakt.html">Kontakt</a>
-            <a href="./allerlei.html">Allerlei</a>
-        </aside>
+      <!--     MainMenue >> DeskTop/Tablett:TableauMenü Mobile:rein/raus -->
+    <div id="menu">
+        <h1>MENÜ</h1>
+        <img id="hamburger" src="../img/hamburger.png">
+    </div>
+    <nav class="menuepanel">
+        <img id="sign" src="../img/cross.png" alt="close">
+        <p id="title">MENÜ</p>
+        <div id="menue">
+            <div class="block1">
+                <div>
+                    <a href="./leistungen.html">
+                    <p>01</p>
+                    <h2>Leistungen</h2></a>
+                </div>
+                <div>
+                    <a href="./blog.html">
+                    <p>02</p>
+                    <h2>Blog</h2></a>
+                </div>
+            </div>
+            <div class="block2">
+                <div>
+                    <a href="./uberuns.html">
+                    <p>03</p>
+                    <h2>Über uns</h2></a>
+                </div>
+                <div>
+                    <a href="./kontakt.html">
+                    <p>04</p>
+                    <h2>Kontakt</h2></a>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!--     Titel   -->
     </header>
     <!--     Auswahlbereich >> Hauptbereiche  || KampagnenFilme || Website Redesign   -->
@@ -91,6 +113,6 @@
             <li>Vimeo</li>
         </ul>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

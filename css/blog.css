@@ -12,13 +12,86 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin-bottom: 70px;
-   
 }
 
 #logo {
     margin-left: 40px;
     margin-top: 40px;
 }
+
+
+#menu{
+    display: flex;
+    justify-content: space-around;
+    width: 10vw;
+    position: relative;
+    top: -16vh;
+   right: -7vw;
+   cursor: pointer;
+}
+
+.menuepanel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 1920px;
+    height: 1080px;
+    background: #2117a6;
+    display: none;
+   
+}
+
+#title {
+    font-size: 1em;
+    color: white;
+    float: right;
+    margin-top: 86px;
+    margin-right: 22px;
+}
+
+#sign {
+    float: right;
+    margin-top: 77px;
+    margin-right: 122px;
+    cursor: pointer;
+}
+
+#menue p {
+    display: inline-block;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: white;
+}
+
+#menue h2 {
+    margin-left: 20px;
+    display: inline-block;
+    font-size: 5em;
+    margin-bottom: 110px;
+    color: #2117a6;
+    text-shadow:    2px  2px 1px white,
+                    2px -2px 1px white,
+                    -2px  2px 1px white,
+                    -2px -2px 1px white;
+}
+
+
+.block1, .block2 {
+    font-style: italic;
+    margin-left: 60px;
+    margin-top: 90px;
+    transform: rotate(-25deg);
+}
+
+#menue {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 300px;
+    margin-top: 150px;
+
+}
+
 
 h2 {
     color: #2117a6;
