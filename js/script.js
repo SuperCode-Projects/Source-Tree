@@ -12,7 +12,6 @@ window.onload = () => {
     });
 }
 
-
 /* Menü toggle
  */
 const nav =document.querySelector("nav")
