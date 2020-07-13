@@ -9,33 +9,19 @@
 
   }
 
-#logo {
-    margin-left: 40px;
-    margin-top: 40px;
-}
-
-header {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr  1fr;
-    gap: 20px;
-}
-
-
-#logo {
-    margin-left: 40px;
-    margin-top: 40px;
-}
-
-
-#menu{
+  #menu{
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 10vw;
     position: relative;
-    top: -16vh;
-   right: -7vw;
+    top: -16vh; 
+left: 85vw;
    cursor: pointer;
+}
+#menu img{
+    width: 3vw;
+    height: 5vh;
 }
 
 .menuepanel {
@@ -99,6 +85,11 @@ header {
     margin-top: 150px;
 
 }
+#logo {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
 
 
 formular
