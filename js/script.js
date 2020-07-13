@@ -1,8 +1,21 @@
+/* Menü toggle */
+
+const nav =document.querySelector("nav")
+const menu =document.querySelector("#menu");
+const close =document.querySelector("#sign");
+menu.addEventListener("click",()=>{
+    nav.style.display="block";
+    close.addEventListener("click",()=>{nav.style.display="none"})
+})
+
+
+/* Butter CMS */
+
 let blog = document.getElementById("blog");
 
 let butter;
 window.onload = () => {
-    butter = Butter('key'); // key = ButterCMS_token ???
+    butter = Butter('key'); // key = ButterCMS_token
 
     butter.page.retrieve('*', 'sample-page'
     ).then(function (resp) {
@@ -12,19 +25,10 @@ window.onload = () => {
     });
 }
 
-/* Menü toggle
- */
-const nav =document.querySelector("nav")
-const menu =document.querySelector("#menu");
-const close =document.querySelector("#sign");
-menu.addEventListener("click",()=>{
-    nav.style.display="block";
 
-    close.addEventListener("click",()=>{nav.style.display="none"})
-})
+/* Get Sheet Done */
 
-
-  GetSheetDone.labeledCols(
+GetSheetDone.labeledCols(
     "1nly19TQFb1rKMLBD9FjBBFrx1H2OIVzJ1HGPshVBMxs",
     1
   ).then((sheet) => {
