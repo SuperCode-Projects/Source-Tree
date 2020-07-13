@@ -94,8 +94,9 @@ header {
 
 
 h2 {
+    font-size: 3em;
     color: #2117a6;
-    margin-left: 25%;
+    margin-left: 8%;
 }
 
 #circletext {
@@ -130,30 +131,27 @@ h2 {
 }
 
 #blog img {
-    width: 500px;
+    width: 800px;
     margin-top: 20px;
     margin: 0;
 } 
 
-h3 {
+h4 {
     font-size: 2em;
     color: white;
-    width: 20vw;
-    position: relative;
-    left: -35px;
-    top: -360px; 
+    font-style: italic;
+    width: 500pxs;
+    margin-bottom: 20px;
 }
 
 #blog p {
-    width: 500px;
-    position: relative;
-    padding: 0;
-    top: -70px; 
+    font-weight: 300;
+    width: 800px;
     margin-top: 0;
     font-size: 1em;
     color: white;
-    padding-bottom: 30px;
-    padding-top: 5px;
+    padding-bottom: 90px;
+    padding-top: 20px;
 }
 
 #blog h3 {

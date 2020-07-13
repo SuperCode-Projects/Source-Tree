@@ -32,8 +32,8 @@ menu.addEventListener("click",()=>{
   for (const product of sheet.data){
     blog.innerHTML += `
       <div>
+        <h4>${product.title}</h4>
         <img src="${product.bild}">
-        <h3>${product.title}</h3>
         <p>${product.text} </p>
       </div>
     `
