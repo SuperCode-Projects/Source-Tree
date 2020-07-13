@@ -129,6 +129,33 @@ h2 {
     padding-bottom: 50px;
 }
 
+#blog img {
+    width: 500px;
+    margin-top: 20px;
+    margin: 0;
+} 
+
+h3 {
+    font-size: 2em;
+    color: white;
+    width: 20vw;
+    position: relative;
+    left: -35px;
+    top: -360px; 
+}
+
+#blog p {
+    width: 500px;
+    position: relative;
+    padding: 0;
+    top: -70px; 
+    margin-top: 0;
+    font-size: 1em;
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 5px;
+}
+
 #blog h3 {
     font-size: 10px;
     color: white;
@@ -146,14 +173,6 @@ h2 {
     color: #2117a6;
     font-size: 3em;
     padding-top: 20px;
-}
-
-#blog p {
-    font-size: 10px;
-    color: white;
-    padding-bottom: 30px;
-    font-style: italic;
-    padding-top: 5px;
 }
 
 #blog div {

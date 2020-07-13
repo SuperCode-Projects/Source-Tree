@@ -1,4 +1,4 @@
-// new CircleType(document.getElementById('texttocircle'));
+let blog = document.getElementById("blog");
 
 let butter;
 window.onload = () => {
@@ -13,6 +13,8 @@ window.onload = () => {
 }
 
 
+/* Menü toggle
+ */
 const nav =document.querySelector("nav")
 const menu =document.querySelector("#menu");
 const close =document.querySelector("#sign");
@@ -21,3 +23,22 @@ menu.addEventListener("click",()=>{
 
     close.addEventListener("click",()=>{nav.style.display="none"})
 })
+
+
+  GetSheetDone.labeledCols(
+    "1nly19TQFb1rKMLBD9FjBBFrx1H2OIVzJ1HGPshVBMxs",
+    1
+  ).then((sheet) => {
+  for (const product of sheet.data){
+    blog.innerHTML += `
+      <div>
+        <img src="${product.bild}">
+        <h3>${product.title}</h3>
+        <p>${product.text} </p>
+      </div>
+    `
+  }
+  });
+
+
+
