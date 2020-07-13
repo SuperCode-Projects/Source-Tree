@@ -11,11 +11,13 @@ window.onload = () => {
         console.log(resp)
     });
 }
+
+
 const nav =document.querySelector("nav")
 const menu =document.querySelector("#menu");
 const close =document.querySelector("#sign");
 menu.addEventListener("click",()=>{
     nav.style.display="block";
-        
+
     close.addEventListener("click",()=>{nav.style.display="none"})
 })
