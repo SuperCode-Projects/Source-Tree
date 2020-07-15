@@ -10,7 +10,8 @@ menu.addEventListener("click",()=>{
 
 
 
-/* Butter CMS */
+
+
 
 let blog = document.getElementById("blog");
 

@@ -74,6 +74,7 @@ header img:first-of-type {
 }
 
 
+
 .menuepanel {
     position: absolute;
     top: 0;
@@ -150,6 +151,7 @@ header img:first-of-type {
     position: absolute;
     margin-left: 25vw;
     top: 300px;
+    color: #2117a6;
 }
 
 @media screen and (max-width: 600px) {
