@@ -16,8 +16,6 @@ butter.post.list({page: 1, page_size: 10}).then(function(response) {
 
 CIRCLE TEXT 
 
-
-
 HTML
 
 <!--just a container used to position in the page-->
@@ -25,6 +23,7 @@ HTML
   <!--the holders for the text, reuse as desired-->
   <div class="circTxt" id="test"></div>
 </div>
+
 
 
 
