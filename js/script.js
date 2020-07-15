@@ -1,4 +1,4 @@
-/* Menü toggle */
+/* Desktop Menü toggle */
 
 const nav =document.querySelector("nav")
 const menu =document.querySelector("#menu");
@@ -41,7 +41,8 @@ GetSheetDone.labeledCols(
       </div>
     `
   }
-  });
+  })
+
 
 
 
