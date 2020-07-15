@@ -19,15 +19,27 @@ header {
    top: 1vh;
 }
 
+header img:first-of-type {
+    position: relative;
+    top: 1px;
+    right: 0;
+    z-index: 1;
+    margin-left: 8px;
+}
 
-#menu{
+#menu {
     display: flex;
     justify-content: space-around;
     width: 10vw;
     position: relative;
-    top: -16vh;
+    top: -10vh;
    left: 85vw;
    cursor: pointer;
+}
+
+#menu h1 {
+    font-size: 1.3em;
+    color: #2117a6;
 }
 
 .menuepanel {
